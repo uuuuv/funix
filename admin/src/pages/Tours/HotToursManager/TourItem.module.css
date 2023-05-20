@@ -1,0 +1,11 @@
+.tourItem:hover {
+  background: #f4f7f9;
+}
+
+.tourItem {
+  cursor: pointer;
+}
+
+.tourItem.disabled {
+  pointer-events: none;
+}

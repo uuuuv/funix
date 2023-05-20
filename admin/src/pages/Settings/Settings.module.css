@@ -1,0 +1,27 @@
+.formGroup {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  width: 100%;
+  margin-bottom: 8px;
+  flex-wrap: wrap;
+}
+
+.formGroup h6 {
+  margin: 0;
+  width: 200px;
+  font-size: 15px;
+}
+
+.formGroup input {
+  padding: 3px;
+  width: 500px;
+}
+
+.formGroup P:last-of-type {
+  margin-top: 4px;
+  margin-bottom: 16px;
+  width: 100%;
+  margin-left: 0;
+  padding-left: 0;
+}

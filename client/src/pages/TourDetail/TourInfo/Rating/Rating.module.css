@@ -1,0 +1,86 @@
+.wrapper {
+  width: 100%;
+  overflow: hidden;
+}
+
+.inner {
+  width: 150%;
+  margin-bottom: 20px;
+}
+
+@media screen and (max-width: 576px) {
+  .inner {
+    width: 100%;
+  }
+}
+
+.ratingItem {
+  background: rgb(248, 219, 248);
+  min-height: 300px;
+  border-radius: 8px;
+}
+
+.ratingItem.empty {
+  background: transparent;
+}
+
+/* =========== rating point ============ (trang dau tien) */
+.grade {
+  padding: 0 16px;
+}
+.grade .average strong {
+  font-size: 50px;
+}
+
+.grade svg {
+  color: orange;
+  transform: scale(1.5);
+  margin-right: 16px;
+}
+
+.grade p {
+  font-size: 20px;
+}
+
+@media screen and (max-width: 576px) {
+  .grade .average strong {
+    font-size: 30px;
+  }
+
+  .grade .average span {
+    font-size: 15px;
+  }
+
+  .grade svg {
+    transform: scale(1);
+    margin-right: 8px;
+  }
+
+  .grade p {
+    font-size: 13px;
+  }
+}
+
+.openQuotes {
+  margin-bottom: 0;
+}
+
+.closeQuotes {
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+}
+
+.comment {
+  letter-spacing: 0.6px;
+}
+
+/* ============== arrow btns ==============  */
+.wrapper {
+  position: relative;
+}
+
+.indicators {
+  position: absolute;
+  top: 0;
+  right: 0;
+}

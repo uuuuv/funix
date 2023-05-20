@@ -1,0 +1,43 @@
+/* custom arrow btns  */
+.tourDetail__rating .slick-arrow,
+.tourDetail__rating .slick-arrow:hover {
+  color: #000;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: 1px solid #ccc;
+  position: absolute;
+  top: -10px;
+  transform: translateY(-100%);
+  z-index: 200;
+  display: block;
+  transition: 0.1s;
+}
+
+.tourDetail__rating .slick-arrow:hover {
+  background: rgb(235, 242, 245) !important;
+}
+
+.tourDetail__rating .slick-arrow.slick-disabled {
+  opacity: 0.5 !important;
+  pointer-events: none;
+  display: block !important;
+}
+
+.tourDetail__rating .slick-arrow svg {
+  color: #000;
+  width: 10px;
+  stroke-width: 3;
+}
+
+.tourDetail__rating .slick-arrow.slick-next {
+  left: 50px;
+}
+
+.tourDetail__rating .slick-arrow.slick-prev {
+  left: 8px;
+}
+
+.tourDetail__rating .slick-slide {
+  margin-right: 6px;
+}

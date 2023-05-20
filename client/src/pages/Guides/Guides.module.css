@@ -1,0 +1,21 @@
+.title {
+  font-size: 17px;
+  font-weight: 600;
+  margin-left: 3px;
+  width: 50%;
+  display: inline-table;
+}
+
+.articleCategory {
+  width: 9rem;
+  display: block;
+  color: #050505;
+  padding: 0 0.4em;
+  height: 2.6rem;
+  line-height: 2.6rem;
+  font-size: 14px;
+  border: 1px solid rgb(192, 188, 188);
+  border-radius: 24px;
+  text-align: center;
+  margin: 2px 0px 1rem 1rem;
+}
