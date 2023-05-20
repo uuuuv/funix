@@ -246,8 +246,9 @@ module.exports.bookTour = async (req, res, next) => {
 
     const settings = await Settings.findOne();
 
-    const range = `${settings.tourBookingSheetId}!B2:Z2`;
+    const range = `${settings.tourBookingSheetId}!A2:Z2`;
     const values = [
+      "",
       getLocalTimeString(new Date()),
       tourCode,
       tourName,
@@ -270,7 +271,7 @@ module.exports.bookTour = async (req, res, next) => {
       role: "admin",
     });
     const ownerEmail = user.username;
-    let html = `<div style="background: black; color: white">
+    let html = `<div>
     <h1>Thông báo: có khách hàng đặt tour</h1>
     <h2>Đặt lúc: ${getLocalTimeString(new Date())}</h2>
     <br>
@@ -333,9 +334,9 @@ module.exports.callMeBack = async (req, res, next) => {
 
     const settings = await Settings.findOne();
 
-    const range = `${settings.tourCallbackRequestSheetId}!B2:Z2`;
+    const range = `${settings.tourCallbackRequestSheetId}!A2:Z2`;
     const values = [
-      getLocalTimeString(new Date()),
+      "",
       getLocalTimeString(new Date()),
       tourCode,
       tourName,
